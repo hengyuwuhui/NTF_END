@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class DealNftPojo {
     private Integer id;
-    private Integer plaId;
+    private Integer nftId;
     private Integer risk_level;
 }

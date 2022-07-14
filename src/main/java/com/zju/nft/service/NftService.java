@@ -36,8 +36,10 @@ public class NftService {
             log.info("msg: " + check.getMessage());
             return Response.fail(1000,"用户验证不通过",null);
         }
+        String[] dir = {"ibox_records", "opensea_records", "NFT_CHINA"};
+        String findName = dir[dealNftPojo.getNftId()];
         try {
-            nftMapper.updateNftRisk("ibox_records", dealNftPojo.getRisk_level(), dealNftPojo.getId());
+            nftMapper.updateNftRisk(findName, dealNftPojo.getRisk_level(), dealNftPojo.getId());
         } catch (Exception e){
             return Response.fail(1012,"处理失败，请联系后台管理员",null);
         }
