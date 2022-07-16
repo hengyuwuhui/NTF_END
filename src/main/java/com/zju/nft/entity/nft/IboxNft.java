@@ -20,5 +20,6 @@ public class IboxNft {
     private float price;
     private Integer total_number;
     private Integer risk_level;
+    private String url;
 
 }
