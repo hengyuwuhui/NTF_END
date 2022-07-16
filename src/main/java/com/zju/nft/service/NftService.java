@@ -59,6 +59,7 @@ public class NftService {
         }
 
         String[] dir = {"ibox_records", "opensea_records", "NFT_CHINA"};
+   
         String findName = dir[findNftPojo.getNftId()];
         List<IboxNft> ret = nftMapper.findAllNft(findName, 0);  //0为无意义但必要参数
 
