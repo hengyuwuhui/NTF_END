@@ -1,9 +1,9 @@
 server:
-  port: 8081
+  port: 12000
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/nft?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
-    username: nft
+    url: jdbc:mysql://139.9.168.199:3306/nft?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: nft_user
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
 mybatis-plus:

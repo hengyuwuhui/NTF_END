@@ -21,13 +21,11 @@ public class NftController {
     private NftService nftService;
 
     @PostMapping("/set_risk_level")
-    @UserLoginToken
     public Response dealNft(@RequestBody DealNftPojo dealNftPojo){
         return nftService.dealNft(dealNftPojo);
     }
 
     @PostMapping("/findNft")
-    @UserLoginToken
     public Response findNft(@RequestBody FindNftPojo findNftPojo){
         return nftService.findNft(findNftPojo);
     }
